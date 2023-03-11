@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import $ from "jquery";
 
 export default class contact extends Component {
@@ -8,10 +8,10 @@ export default class contact extends Component {
       $("#gform *").fadeOut(1000);
       $("#gform").prepend(
         '<p style="color:yellow;">Thank you for contacting!</p>'
-      );
-    });
-  }
-  render() {
+        );
+      });
+    }
+    render() {
     return (
       <>
         <div className="contact">
@@ -22,26 +22,26 @@ export default class contact extends Component {
           <form
             name="gform"
             id="gform"
-            enctype="text/plain"
+            encType="text/plain"
             action="https://docs.google.com/forms/d/e/1FAIpQLSc6-yyd_NqFzILyV0siV2fwFXUMEtJ4OxYwQed5MrgGlh2RwA/formResponse?"
             target="hidden_iframe"
-            onsubmit="submitted=true;"
+            onSubmit={"submitted=true;"}
           >
-            <label for="entry.1507413414">Name : </label>
+            <label htmlFor="entry.1507413414">Name : </label>
             <input
               type="text"
               name="entry.1507413414"
               id="entry.1507413414"
               required
             />
-            <label for="entry.2010504488">Email : </label>
+            <label htmlFor="entry.2010504488">Email : </label>
             <input
               type="email"
               name="entry.2010504488"
               id="entry.2010504488"
               required
             />
-            <label for="">Message : </label>
+            <label htmlFor="textarea">Message : </label>
             <textarea
               name="entry.732095473"
               id="entry.732095473"
@@ -57,7 +57,7 @@ export default class contact extends Component {
             name="hidden_iframe"
             id="hidden_iframe"
             style={{ display: "none" }}
-            onload="if(submitted) {}"
+            onLoad={`if(submitted) {}`}
           ></iframe>
         </div>
       </>
