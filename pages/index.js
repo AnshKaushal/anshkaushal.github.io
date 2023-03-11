@@ -1,5 +1,8 @@
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import Typewriter from "typewriter-effect";
+import profilePic from '../public/images/my-img-modified.png'
 
 export default function Home() {
   return (
@@ -14,12 +17,12 @@ export default function Home() {
         />
       </Head>
 
-      <div class="container">
-        <div class="upper">
-          <img src="/images/my-img-modified.png" alt="profile pic" />
+      <div className="container">
+        <div className="upper">
+          <Image src={profilePic} alt="profile pic"/>
           <h1>Hey, It's Ansh Kaushal</h1>
         </div>
-        <div class="desc">
+        <div className="desc">
           <h2 style={{textAlign:'center'}}>
             I am a <Typewriter
               options={{
@@ -29,7 +32,7 @@ export default function Home() {
               }}  />
           </h2>
         </div>
-        <div class="intro">
+        <div className="intro">
           <h3>I like to :</h3>
           <ol>
             <li>Fiddle on Figma</li>
@@ -37,13 +40,13 @@ export default function Home() {
             <li>Helping fellowmates in coding</li>
             <li>
               Practicing on{" "}
-              <a href="https://codechef.com" target="_blank">
+              <Link href="https://codechef.com" target="_blank" rel="noreferrer">
                 Codechef
-              </a>{" "}
+              </Link>{" "}
               and{" "}
-              <a href="https://codewars.com" target="_blank">
+              <Link href="https://codewars.com" target="_blank" rel="noreferrer">
                 Codewars
-              </a>
+              </Link>
               .
             </li>
             <br />
@@ -53,7 +56,7 @@ export default function Home() {
             <li>Making existing technologies better.</li>
           </ol>
         </div>
-        <div class="intro">
+        <div className="intro">
           <h3>Languages i have learned :</h3>
           <ol>
             <li>Html</li>
@@ -69,20 +72,20 @@ export default function Home() {
         </div>
       </div>
 
-      <div class="links">
-        <div class="con">
+      <div className="links">
+        <div className="con">
           <h3>Contact Me</h3>
           <p>I am available for freelancing!</p>
-          <a href="/contact" class="btn">
+          <Link href="/contact" className="btn">
             Contact Me
-          </a>
+          </Link>
         </div>
-        <div class="abo">
+        <div className="abo">
           <h3>Still not satisfied?</h3>
           <p>Let's learn more about me</p>
-          <a href="/about" class="btn">
+          <Link href="/about" className="btn">
             About Me
-          </a>
+          </Link>
         </div>
       </div>
     </>

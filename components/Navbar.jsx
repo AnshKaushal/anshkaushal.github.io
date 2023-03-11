@@ -1,22 +1,24 @@
+import Link from "next/link";
+
 const Navbar = () => {
   return (
     <>
       <nav>
-        <div class="navbar-logo">
+        <div className="navbar-logo">
           <a href="/">AnSh KaUsHaL</a>
         </div>
-        <ul class="navbar-menu">
+        <ul className="navbar-menu">
           <li>
-            <a href="/">Home</a>
+           <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <a href="/projects">Projects</a>
+            <Link href="/projects">Projects</Link>
           </li>
           <li>
-            <a href="/contact">Contact</a>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </nav>

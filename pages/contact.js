@@ -14,7 +14,7 @@ export default class contact extends Component {
   render() {
     return (
       <>
-        <div class="contact">
+        <div className="contact">
           <h1>Contact Me</h1>
           <p>
             Whether you want to enquire or start a new project, just Contact me
@@ -50,7 +50,7 @@ export default class contact extends Component {
               required
             ></textarea>
             <br />
-            <input class="submit1" type="submit" value="Submit" />
+            <input className="submit1" type="submit" value="Submit" />
           </form>
 
           <iframe

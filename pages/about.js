@@ -1,5 +1,8 @@
 import React from "react";
 import Head from "next/head";
+import Image from "next/image";
+import picture from "../public/images/hero-bg-3000.jpg";
+import Link from "next/link";
 
 export default function about() {
   return (
@@ -14,21 +17,21 @@ export default function about() {
         />
       </Head>
 
-      <div class="about">
+      <div className="about">
         <h1>About Me</h1>
-        <img src="/images/hero-bg-3000.jpg" alt="pic" />
+        <Image src={picture} alt="pic" height={410} />
         <p>
           Hi, I am Ansh Kaushal, A Web designer and a passionate photographer. I
           am 19yrs of age and I have a really good experience in Web designing.
           I used to code when I was a little age, and i developed this quality
           of coding eventually!. By the way, check out my{" "}
-          <a href="/projects">projects</a>.
+          <Link href="/projects">projects</Link>.
           <br />
           <br />I love to make new projects and collab with other people to
           develop new projects. I really 💖 photography and I really enjoy doing
           it. I click photographs in the meantime when I am not coding.
         </p>
-        <div class="back">
+        <div className="back">
           <h2>Background :</h2>
           <ol>
             <li>Studied at Sri Aurobindo Public School, Baddi</li>
@@ -44,80 +47,101 @@ export default function about() {
           <ol>
             <li>
               Udemy : Complete Web development bootcamp{" "}
-              <a
+              <Link
                 href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Link
-              </a>
+              </Link>
               <br />
               View certificate{" "}
-              <a href="/images/udemyCertificate.pdf" target="_blank">
+              <Link
+                href="/images/udemyCertificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
                 here
-              </a>
+              </Link>
             </li>
             <li>
               Youtube : C beginner course{" "}
-              <a href="https://youtu.be/irqbmMNs2Bo" target="_blank">
+              <Link
+                href="https://youtu.be/irqbmMNs2Bo"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Link
-              </a>
+              </Link>
             </li>
             <li>
               Youtube : NextJs Full course{" "}
-              <a href="https://youtube.com/playlist?list=PLu0W_9lII9agtWvR_TZdb_r0dNI8-lDwG">
+              <Link
+                href="https://youtube.com/playlist?list=PLu0W_9lII9agtWvR_TZdb_r0dNI8-lDwG"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Link
-              </a>
+              </Link>
             </li>
             <li>
               Edx : Introduction to Cloud Development <br />
               with HTML, CSS, and JavaScript{" "}
-              <a
+              <Link
                 href="https://learning.edx.org/course/course-v1:IBM+CAD101EN+2T2020/home"
                 target="_blank"
+                rel="noreferrer"
               >
                 Link
-              </a>
+              </Link>
               <br />
               View certificate{" "}
-              <a href="/images/EdxCertificate.pdf" target="_blank">
+              <Link href="/images/EdxCertificate.pdf" target="_blank" rel="noreferrer">
                 here
-              </a>
+              </Link>
             </li>
             <li>
-              <img
+              <Image
                 src="https://www.codewars.com/users/anshhkaushal/badges/small"
                 alt=""
-                style={{width: '300px', marginTop: '0.6rem',border: '1px solid #efefef'}}
-              />{" "}
-              <a
+                style={{
+                  width: "300px",
+                  marginTop: "0.6rem",
+                  border: "1px solid #efefef",
+                }}
+                width={120} height={30}
+              />{" "}{" "}
+              <Link
                 href="https://www.codewars.com/users/anshhkaushal"
                 target="_blank"
+                rel="noreferrer"
               >
                 Codewars
-              </a>{" "}
+              </Link>{" "}
               ranking.
             </li>
             <li>
-              <a
+              <Link
                 href="https://www.codechef.com/users/anshhkaushal"
                 target="_blank"
+                rel="noreferrer"
               >
                 CodeChef
-              </a>{" "}
+              </Link>{" "}
               1🌟 Coder
             </li>
             <li>
               Beginner{" "}
-              <a href="https://unity.com" target="_blank">
+              <Link href="https://unity.com" target="_blank" rel="noreferrer">
                 Unity
-              </a>{" "}
+              </Link>{" "}
               Development
             </li>
           </ol>
           <h3>Want to know more? Contact me!</h3>
-          <a href="/contact" class="btn">
+          <Link href="/contact" className="btn">
             Contact me
-          </a>
+          </Link>
         </div>
       </div>
     </>
