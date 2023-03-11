@@ -36,7 +36,7 @@ export default function projects() {
           </Link>
         </div>
         <div className="project">
-          <img src={project3} alt="Project 3" height={250}/>
+          <Image src={project3} alt="Project 3" height={250}/>
           <h2>Detect Keypress</h2>
           <p>
             Beginner Javascript project that detects which key you pressed on
