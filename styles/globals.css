@@ -122,7 +122,7 @@ nav {
   background-color: transparent;
   margin-left: 4rem;
   font-size: 3.5rem;
-  text-shadow: 5px 5px 0 #000;
+  text-shadow: 0 0 100px #efefef;
 }
 
 .desc {
