@@ -26,6 +26,7 @@ export default class contact extends Component {
         </Head>
         <div className="contact">
           <h1>Contact Me</h1>
+          <br/>
           <p>
             Whether you want to enquire or start a new project, just Contact me
           </p>

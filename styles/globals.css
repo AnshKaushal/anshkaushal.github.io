@@ -159,6 +159,10 @@ nav {
   margin-top: 1rem;
 }
 
+.intro span, .intro a {
+  color: #bffff0;
+}
+
 .links {
   display: flex;
   flex-direction: row;

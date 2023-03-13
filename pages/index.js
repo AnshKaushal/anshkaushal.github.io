@@ -35,9 +35,9 @@ export default function Home() {
         <div className="intro">
           <h3>I like to :</h3>
           <ol>
-            <li>Fiddle on Figma</li>
-            <li>Help in open-source contribution</li>
-            <li>Helping fellowmates in coding</li>
+            <li>Fiddle on <span>Figma</span></li>
+            <li>Help in <span>open-source</span> contribution</li>
+            <li>Helping fellowmates in <span>coding</span></li>
             <li>
               Practicing on{" "}
               <Link href="https://codechef.com" target="_blank" rel="noreferrer">
@@ -50,10 +50,10 @@ export default function Home() {
               .
             </li>
             <br />
-            <li>Making wesbites in Nextjs & ReactJs</li>
-            <li>Modelling in blender</li>
-            <li>Solving real life problems</li>
-            <li>Making existing technologies better.</li>
+            <li>Making websites in <span>Nextjs</span> & <span>ReactJs</span></li>
+            <li>Modelling in <span>Blender</span></li>
+            <li>Solving <span>real life</span> problems</li>
+            <li>Making existing technologies <span>better</span>.</li>
           </ol>
         </div>
         <div className="intro">
@@ -65,7 +65,7 @@ export default function Home() {
             <li>Node.Js</li>
             <br />
             <li>ReactJs & NextJs</li>
-            <li>C/C++</li>
+            <li>C/C++ (Beginner)</li>
             <li>Beginner Python</li>
             <li>Blender, Figma & Unity</li>
           </ol>
