@@ -28,7 +28,7 @@ export default class contact extends Component {
           <h1>Contact Me</h1>
           <br/>
           <p>
-            Whether you want to enquire or start a new project, just Contact me
+            Whether you want to enquire or start a new project, just <span style={{color: '#bffff0'}}>contact me</span>.
           </p>
           <form
             name="gform"
@@ -36,7 +36,7 @@ export default class contact extends Component {
             encType="text/plain"
             action="https://docs.google.com/forms/d/e/1FAIpQLSc6-yyd_NqFzILyV0siV2fwFXUMEtJ4OxYwQed5MrgGlh2RwA/formResponse?"
             target="hidden_iframe"
-            onSubmit={"submitted=true;"}
+            onsubmit={"submitted=true;"}
           >
             <label htmlFor="entry.1507413414">Name : </label>
             <input
@@ -68,7 +68,7 @@ export default class contact extends Component {
             name="hidden_iframe"
             id="hidden_iframe"
             style={{ display: "none" }}
-            onLoad={`if(submitted) {}`}
+            onload={`if(submitted) {}`}
           ></iframe>
         </div>
       </>

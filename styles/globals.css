@@ -181,6 +181,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 /* General Button Styles */
@@ -411,6 +412,7 @@ nav {
   }
   .about img {
     width: 330px;
+    height: 270px;
   }
   .about p {
     width: 80vw;
@@ -423,5 +425,8 @@ nav {
   .projects {
     grid-template-columns: 1fr;
     margin-top: 3rem;
+  }
+  .project img {
+    height: 200px;
   }
 }
