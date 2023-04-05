@@ -1,0 +1,32 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 70vw;
+    flex-wrap: wrap;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+.body {
+    padding: 2rem;
+}
+
+.descImg {
+    width: 40%;
+    box-shadow: 5px 5px 0 #1d1d1d;
+}
+
+.button {
+    width: 150px;
+    background-color: #efefef;
+    color: #1d1d1d;
+    height: 40px;
+    margin-top: 2rem;
+}
