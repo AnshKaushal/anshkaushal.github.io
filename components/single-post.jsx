@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Post.module.css'
 
 const SinglePost = ({ data }) => {
@@ -14,7 +15,7 @@ const SinglePost = ({ data }) => {
       </Head>
     <div className={styles.content}>
       <h1 className={styles.title}>{data.title}</h1>
-      <img src={data.image} className={styles.descImg} alt="no"/>
+      <Image src={data.image} className={styles.descImg} height={300} width={300} alt="no"/>
       <div dangerouslySetInnerHTML={{ __html: data.content }} className={styles.body}/>
       <p className={styles.desc}>{data.description}</p>
       <button className={styles.button}><Link href='/posts'>Back</Link></button>

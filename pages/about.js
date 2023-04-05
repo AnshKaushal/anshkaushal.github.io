@@ -22,7 +22,7 @@ const About = () => {
         <h1 style={{ textShadow: "5px 5px #1d1d1d" }}>Our Team -&gt;</h1>
         <div className={styles.cards}>
           <article className={styles.card}>
-            <div className={styles.tempText}><Image src={'/images/ansh.jpeg'} width={500} height={400}/></div>
+            <div className={styles.tempText}><Image src={'/images/ansh.jpeg'} width={500} height={400} alt="Ansh"/></div>
             <div className={styles.cardContent}>
               <span className={styles.cardTitle}>Ansh Kaushal</span>
               <span className={styles.cardSub}>
@@ -41,7 +41,7 @@ const About = () => {
             </div>
           </article>
           <article className={styles.card}>
-            <div className={styles.tempText}><Image src={'/images/bhadwi.jpeg'} width={400} height={600}/></div>
+            <div className={styles.tempText}><Image src={'/images/bhadwi.jpeg'} width={400} height={600} alt="ayushi"/></div>
             <div className={styles.cardContent}>
               <span className={styles.cardTitle}>Ayushi Pathak</span>
               <span className={styles.cardSub}>

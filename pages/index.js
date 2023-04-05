@@ -34,7 +34,7 @@ function Home({data}) {
             height={320}
             alt="Nice"
           />
-          <p>It's an essence to click beautiful photographs!</p>
+          <p>It&#39;s an essence to click beautiful photographs!</p>
         </div>
       </main>
       <main className={styles.main}>
