@@ -1,0 +1,11 @@
+<%- include ('partials/header') %>
+
+<h1 style="font-size: 3rem; text-align: center; margin-top: 2rem">
+  Uploaded Photos
+</h1>
+<% for (const upload of uploads) { %>
+<div class="images">
+  <img src="/uploads/<%= upload.filename %>" />
+  <h2>Uploaded by : <span> @<%= upload.name %></span></h2>
+</div>
+<% } %> <%- include ('partials/footer') %>

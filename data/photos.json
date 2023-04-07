@@ -1,5 +1,5 @@
 {
-    "images": [
+    "photos": [
       {
         "id": "1",
         "src": "/images/img1.jpg"
@@ -51,6 +51,10 @@
       {
         "id": "13",
         "src": "/images/img3.jpg"
+      },
+      {
+        "id": "14",
+        "src": "/images/img4.png"
       }
     ]
   }
