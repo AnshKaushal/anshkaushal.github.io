@@ -21,7 +21,7 @@ export default class contact extends Component {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link
             rel="icon"
-            href="https://anshkaushal.netlify.app/static/media/bg.994bd6f74b2caa65237f.png"
+            href="/images/my-img-modified.png"
           />
         </Head>
         <div className="contact">
