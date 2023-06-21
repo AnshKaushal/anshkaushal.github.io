@@ -12,6 +12,8 @@
   color: #efefef;
   background-color: #0a0a0a;
   font-family: "Inter", sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 html {
@@ -428,6 +430,9 @@ nav {
     display: flex;
     flex-direction: column;
   }
+  .navbar-menu li{
+    margin: 0 10px;
+  }
   .navbar-logo {
     margin-bottom: 20px;
   }
@@ -484,5 +489,11 @@ nav {
   }
   .project img {
     height: 200px;
+  }
+  .journal .posts {
+    width: 300px;
+  }
+  .indPost {
+    width: 300px;
   }
 }

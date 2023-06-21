@@ -125,6 +125,7 @@ export default function about() {
                 alt=""
                 style={{
                   width: "300px",
+                  height: "25px",
                   marginTop: "0.6rem",
                   border: "1px solid #efefef",
                 }}
