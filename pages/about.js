@@ -129,13 +129,13 @@ export default function about() {
                   border: "1px solid #efefef",
                 }}
                 width={120} height={30}
-              />{" "}{" "}
+              />{" "}
               <Link
                 href="https://www.codewars.com/users/anshhkaushal"
                 target="_blank"
                 rel="noreferrer"
-              >
-                Codewars
+              >{" "}
+               Codewars
               </Link>{" "}
               ranking.
             </li>
