@@ -375,6 +375,51 @@ nav {
   color: #efefef;
 }
 
+/* Journal Styles */
+
+.journal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.journal h1 {
+  color: orange;
+}
+
+.journal .posts {
+  margin-top: 2rem;
+  width: 400px;
+  border: 2px solid #FFE6C7;
+  box-shadow: 5px 5px 0 #0ff;
+  padding: 20px;
+}
+
+.journal .posts a {
+  text-decoration: none;
+}
+.journal .posts a h2:hover{
+  color: #0ff;
+}
+
+/* Individual Post Styles */
+
+.indPost {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  width: 400px;
+}
+
+.indPost h1 {
+  margin-bottom: 3rem;
+  color: #f5ffc9;
+}
+
 @media screen and (max-width: 768px) {
   html {
     width: 80vw;

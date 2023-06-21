@@ -65,6 +65,25 @@ export default function about() {
               </Link>
             </li>
             <li>
+              Udemy : Javascript DSA Masterclass{" "}
+              <Link
+                href="https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link
+              </Link>
+              <br />
+              View certificate{" "}
+              <Link
+                href="/images/udemyCertificate.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                here
+              </Link>
+            </li>
+            <li>
               Youtube : C beginner course{" "}
               <Link
                 href="https://youtu.be/irqbmMNs2Bo"
