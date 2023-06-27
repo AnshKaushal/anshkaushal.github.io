@@ -7,7 +7,7 @@ const Journal = ({ posts }) => {
       {posts && posts.map((post) => (
         <div className='posts' key={post.id}>
           <Link href={`/post/${post.id}`}>
-              <h2>{post.title}</h2>
+            <h2>{post.title}</h2>
           </Link>
           <p>{post.description}</p>
         </div>
@@ -16,7 +16,7 @@ const Journal = ({ posts }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch('https://data.anshkaushal.codes/api/data');
   const data = await response.json();
 
