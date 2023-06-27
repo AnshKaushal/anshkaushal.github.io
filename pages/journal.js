@@ -4,7 +4,7 @@ const Journal = ({ posts }) => {
   return (
     <div className='journal'>
       <h1>&lt;Journal By Ansh/&gt;</h1>
-      {posts.map((post) => (
+      {posts && posts.map((post) => (
         <div className='posts' key={post.id}>
           <Link href={`/post/${post.id}`}>
               <h2>{post.title}</h2>
