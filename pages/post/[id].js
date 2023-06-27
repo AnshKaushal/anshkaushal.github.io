@@ -1,27 +1,23 @@
+import { useRouter } from 'next/router';
+
 const Post = ({ post }) => {
+  const router = useRouter();
+
+  // Render a loading state while fetching data
+  if (router.isFallback) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div className="indPost">
       <h1>{post.title}</h1>
-      <p>{post.content}</p>
+      {/* Render HTML content if it exists */}
+      {post.content && <div dangerouslySetInnerHTML={{ __html: post.content }} />}
     </div>
   );
 };
 
-export async function getStaticPaths() {
-  const response = await fetch('https://data.anshkaushal.codes/api/data');
-  const data = await response.json();
-
-  const paths = data.posts.map((post) => ({
-    params: { id: post.id.toString() },
-  }));
-
-  return {
-    paths,
-    fallback: false,
-  };
-}
-
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const response = await fetch('https://data.anshkaushal.codes/api/data');
   const data = await response.json();
 
